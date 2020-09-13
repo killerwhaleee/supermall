@@ -53,9 +53,10 @@
     },
     methods: {
       scrollTo(x, y, time=300) {
-        this.scroll && this.scroll.scrollTo(x, y, time)
+        this.scroll && this.scroll.scrollTo(x, y, time)      //避免scroll为null 报错
       },
       refresh() {
+        console.log('------');
         this.scroll && this.scroll.refresh()
       },
       finishPullUp() {

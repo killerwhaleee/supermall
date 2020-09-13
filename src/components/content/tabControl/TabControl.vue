@@ -17,7 +17,7 @@
     props:{
       titles:{
         type:Array,
-        default (){
+        default (){  //默认的对象是数组或对象时，必须写成函数
           return []
         }
       }
