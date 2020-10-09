@@ -103,7 +103,7 @@
     // },
     activated() {
       // console.log('activated');
-      this.$refs.scroll.scrollTo(0, this.saveY,0)
+      this.$refs.scroll.scrollTo(0, this.saveY)
       this.$refs.scroll.refresh()
     },
     deactivated() {
